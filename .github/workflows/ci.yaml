@@ -23,5 +23,4 @@ jobs:
           echo "Using Node ${{ env.NODE_VERSION }} on ${{ runner.os }}"
           npm init -y >/dev/null 2>&1 && npm pkg set scripts.build="echo build-ok"
           npm run build
-      - name: Deliberate failure
-        run: exit 1
+
